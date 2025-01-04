@@ -1,41 +1,19 @@
-<ngb-carousel *ngIf="popularProducts">
-    <ng-template  *ngFor="let item of popularProducts" ngbSlide>
-      <div class="picsum-img-wrapper">
-        <a routerLink="/details/{{item.id}}"> <img class="product-header-image" src="{{item.image}}" alt="Random first slide">
-     </a>
-        </div>
-      <div class="carousel-caption">
-        <h3>{{item.name}}</h3>
-        <p>{{item.description}}</p>
-      </div>
-    </ng-template>
-  </ngb-carousel>
-<div class="product-list-wrapper">
-<h1>Trendy Products</h1>
-<div class="row">
-  <div class="col-sm-3" *ngFor="let item of trendyProducts">
-    <div class="product-item">
-      <img src="{{item.image}}" alt="">
-    <div class="product-details">
-      <h6 class="name-head">{{item.name}}</h6>
-      <div class="product-price">
-        <h6>Price:{{item.price}}</h6>
-      </div>
-      <div class="product-color">
-        <h6>Color:{{item.color}}</h6>
-      </div>
-    </div>
-    <div class="product-footer">
-      <a routerLink="/details/{{item.id}}">View Details</a>
-      <a href="">Add to Cart</a>
-
-    </div>
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-bold">ElectroMart</h1>
+      <p class="lead text-body-secondary">Electronic products are devices that use electronic circuits to process and
+        control information. They are characterized by their reliability, low power consumption, and ability to save
+        energy, materials, space, and human effort.Mobile devices
+        Wearables
+        TVs, set top boxes, and monitors
+        Laptops, tablets, and computers
+        Appliances and white goods
+        Printers and scanners</p>
+      <p>
+        <a class="btn btn-primary my-2" routerLink="/seller/product">Product Section</a> &nbsp; &nbsp;
+        <a class="btn btn-secondary my-2" routerLink="/sign-up">Register</a>
+      </p>
     </div>
   </div>
-
-
-</div>
-</div>
-
-  
-  
+</section>
